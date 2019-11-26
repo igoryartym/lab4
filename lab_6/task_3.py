@@ -1,15 +1,12 @@
-n = int(input("Введіть к-сть: "))
-max1 = (2*n)**2
-count = 0
-j = 2
-v = 3
-i = 0
-f = 0
-while i < max1:
-    i = (2 * j) ** 2
-    count += i
-    j += 1
-while
+n = int(input("n = "))
+vect1 = [int(input()) for x in range(n)]
+print(vect1)
+vect2 = [int(input()) for x in range(n)]
+print(vect2)
+for i in range(n):
+    if i != n-1:
+        if vect1[i] / vect2[i] != vect1[i+1] / vect2[i+1]:
+            print("Вектори не паралельні!")
+            break
 else:
-    print(count)
-
+    print("Вектори паралельні!")
